@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 5px;
+}
+.indice{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+}
+.indice:hover{
+    color: #AD9966;
+    transition: all 0.3s ease 0s;
+}
+.ativo{
+    color: #AD9966;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+header>ul>li{
+    display: inline-block;
+    width: 5%;
+}
+#logo{
+    width: 23%;
+    vertical-align: middle;
+}
+#logo img{
+    width: 66.81px;
+    height: 79.38px;
+    margin-top: 15px;
+}
+.drop{
+    position: relative;
+}
+#dropdown{
+    padding-left: 30px;
+    position: absolute;
+    background-color: white;
+    width: 15vh;
+    height: 12vh;
+    padding-top: 3vh;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    transition: ease 0.3s;
+}
+header>ul>li:hover #dropdown{
+    visibility: visible;
+    opacity: 100%;
+}
+#margin{
+    margin-bottom: 20px;
+}
+#cabecalho{
+    height: 39vh;
+    background-image: url(img/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+}
+#rooftop{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#titulo{
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 72px;
+    letter-spacing: 10.8px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+p{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+p>a{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.titulo-section{
+    text-align: left;
+    width: 445px;
+    height: 516px;
+}
+#daily-food{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 48px;
+    text-align: left;
+    top: 1000px;
+    width: 390px;
+    height: 216px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#menu-area{
+    width: 100%;
+    height: 1075.5px;
+    text-align: center;
+    
+}
+#titulo-menu{
+    width: 475px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -27%;
+}
+#menu-lista{
+    background-color: #FAF5F0;
+    width: 635px;
+    display: inline-block;
+    height: 100%;
+    padding-top: 120px;
+    text-align: center;
+    position: relative;
+}
+.menu-cardapio{
+    width: 635px;
+    height: 258.5px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#appetizer-hr{
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    color: rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translate(-50%);
+    top: 35px;
+    
+}
+h3{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 21px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.item-menu{
+    color: #010000;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.textos{
+    color: #777777;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0;
+    padding-bottom: 35px;
+}
+#lorem{
+    line-height: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+#botao-menu{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+    background-color: #AD9966;
+    border: #AD9966;
+    border-style: solid;
+    padding: 15px;
+    border-width: 1px;
+}
+#botao-menu:hover{
+    color: #AD9966;
+    background-color: white;
+}
+#chef{
+    position: relative;
+    width: 555px;
+    height: 800px;
+    left: 20%;
+    top: -100px;
+}
+.titulo-section3{
+    position: relative;
+    width: 475px;
+    height: 574px;
+    left: 55.5%;
+    top: -725px;
+}
+.textos3{
+    color: #777777;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0;
+    padding-bottom: 35px;
+}
+#chefs-title{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 48px;
+    text-align: left;
+    top: 1000px;
+    width: 390px;
+    height: 216px;
+}
+#callaction{
+    width: 1140px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 2400px;
+}
+footer{
+    background-color: #04091e;
+    width: 100%;
+    height: 515px;
+    padding: 120px 0;
+    text-align: center;
+}
+.rodape-info{
+    display: inline-block;
+    padding-right: 50px;
+}
+.rodape-titulo{
+    font-family: "Playfair Display", serif;
+}
+.rodape-lista>li>a{
+    text-decoration: none;
+    color: #777777;
+}
+.rodape-lista>li{
+    line-height: 40px;
+    text-align: left;
+}
+.rodape-info>p{
+    text-align: left;
+}
+.rodape-ultimo{
+    position: relative;
+    top: -70px;
+}
+#stayUpdate{
+    color: #777777;
+    text-transform: initial;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.fa-heart{
+    color: #AD9966;
+}
+.Colorlib{
+    color: #AD9966;
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+}
+.email-rodape{
+    border: solid #777777 1px;
+    padding: 10px 100px 10px 20px;
+    background-color: #04091e;
+    color: white;
+}
+.submit-rodape{
+    background-color: #AD9966;
+    color: white;
+    padding: 11px;
+    border: none;
+}
+#g2_2{
+    height: 560px;
+    width: 457px;
+    position: relative;
+    left: 21%;
+    top: 100px;
+}
+.titulo-section2{
+    position: relative;
+    width: 475px;
+    height: 574px;
+    left: 50%;
+    bottom: 400px;
+}
+#callaction2{
+    width: 1140px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 1250px;
+}
+#chef2{
+    position: relative;
+    width: 555px;
+    height: 800px;
+    left: 50.8%;
+    top: 250px;
+}
+.titulo-section4{
+    position: relative;
+    width: 475px;
+    height: 574px;
+    left: 22%;
+    bottom: 400px;
+}
+#galeria{
+    height: 1609px;
+    padding-bottom: 90px;
+}
+#g1{
+    height: 800px;
+    width: 555px;
+    position: relative;
+    left: 20%;
+    bottom: -100px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g1 img{
+    transition: ease 0.3s;
+}
+#g1:hover{
+    filter: brightness(30%);
+}
+#g1:hover img{
+    scale: calc(1.2);
+}
+#g2{
+    height: 560px;
+    width: 457px;
+    position: relative;
+    left: 51.5%;
+    bottom: 400px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g2 img{
+    transition: ease 0.3s;
+}
+#g2:hover{
+    filter: brightness(30%);
+}
+#g2:hover img{
+    scale: calc(1.2);
+}
+#g3{
+    height: 560px;
+    width: 457px;
+    position: relative;
+    left: 25.26%;
+    bottom: 420px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g3 img{
+    transition: ease 0.3s;
+}
+#g3:hover{
+    filter: brightness(30%);
+}
+#g3:hover img{
+    scale: calc(1.2);
+}
+#g4{
+    height: 600px;
+    width: 555px;
+    position: relative;
+    left: 51.5%;
+    bottom: 920px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g4 img{
+    transition: ease 0.3s;
+}
+#g4:hover{
+    filter: brightness(30%);
+}
+#g4:hover img{
+    scale: calc(1.2);
+}

@@ -1,0 +1,779 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    height: auto;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 5px;
+}
+.indice{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+}
+.indice:hover{
+    color: #AD9966;
+    transition: all 0.3s ease 0s;
+}
+.ativo{
+    color: #AD9966;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    position: relative;
+}
+header>ul>li{
+    display: inline-block;
+    width: 5%;
+}
+#logo{
+    width: 23%;
+    vertical-align: middle;
+}
+#logo img{
+    width: 66.81px;
+    height: 79.38px;
+    margin-top: 15px;
+}
+.drop{
+    position: relative;
+}
+#dropdown{
+    padding-left: 30px;
+    position: absolute;
+    background-color: white;
+    width: 15vh;
+    height: 12vh;
+    padding-top: 3vh;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+    transition: ease 0.3s;
+}
+header>ul>li:hover #dropdown{
+    visibility: visible;
+    opacity: 100%;
+}
+#margin{
+    margin-bottom: 20px;
+}
+#cabecalho{
+    height: 78vh;
+    background-image: url(img/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+#rooftop{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#titulo{
+    text-align: center;
+    color: white;
+    font-family: "Playfair Display", serif;
+    font-size: 72px;
+    letter-spacing: 10.8px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+p{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.titulo-section{
+    text-align: left;
+    width: 445px;
+    height: 516px;
+}
+#daily-food{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 48px;
+    text-align: left;
+    top: 1000px;
+    width: 390px;
+    height: 216px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+#menu-area{
+    width: 100%;
+    height: 1075.5px;
+    text-align: center;
+    
+}
+#titulo-menu{
+    width: 475px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -27%;
+}
+#menu-lista{
+    background-color: #FAF5F0;
+    width: 635px;
+    display: inline-block;
+    height: 100%;
+    padding-top: 120px;
+    text-align: center;
+    position: relative;
+}
+.menu-cardapio{
+    width: 635px;
+    height: 258.5px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 45px;
+}
+#appetizer-hr{
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    color: rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translate(-50%);
+    top: 35px;
+    
+}
+h3{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 21px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+.item-menu{
+    color: #010000;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.textos{
+    color: #777777;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0;
+    padding-bottom: 35px;
+}
+#lorem{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+#botao-menu{
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+    background-color: #AD9966;
+    border: #AD9966;
+    border-style: solid;
+    padding: 15px;
+    border-width: 1px;
+}
+#botao-menu:hover{
+    color: #AD9966;
+    background-color: white;
+}
+#galeria{
+    height: 1609px;
+    padding-bottom: 90px;
+}
+#g1{
+    height: 800px;
+    width: 555px;
+    position: relative;
+    left: 20%;
+    bottom: 100px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g1 img{
+    transition: ease 0.3s;
+}
+#g1:hover{
+    filter: brightness(30%);
+}
+#g1:hover img{
+    scale: calc(1.2);
+}
+#g2{
+    height: 560px;
+    width: 457px;
+    position: relative;
+    left: 52%;
+    bottom: 500px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g2 img{
+    transition: ease 0.3s;
+}
+#g2:hover{
+    filter: brightness(30%);
+}
+#g2:hover img{
+    scale: calc(1.2);
+}
+#g3{
+    height: 560px;
+    width: 457px;
+    position: relative;
+    left: 25.26%;
+    bottom: 620px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g3 img{
+    transition: ease 0.3s;
+}
+#g3:hover{
+    filter: brightness(30%);
+}
+#g3:hover img{
+    scale: calc(1.2);
+}
+#g4{
+    height: 600px;
+    width: 555px;
+    position: relative;
+    left: 52%;
+    bottom: 1020px;
+    transition: ease 0.3s;
+    overflow: hidden;
+}
+#g4 img{
+    transition: ease 0.3s;
+}
+#g4:hover{
+    filter: brightness(30%);
+}
+#g4:hover img{
+    scale: calc(1.2);
+}
+.formulario{
+    position: absolute;
+    height: 938px;
+    width: 635px;
+    padding: 120px 50px 240px;
+    background-color: #faf0f0;
+    left: 37%;
+    transform: translate(-50%);
+}
+#formulario{
+    position: relative;
+    width: 565px;
+    height: 578px;
+}
+.titulo-section2{
+    text-align: left;
+    position: relative;
+    width: 350px;
+    height: 712px;
+    left: 700px;
+    bottom: 600px;
+    padding: 0px 55px 30px 0px;
+}
+.LadoA{
+    background: url(img/view-menu-bg.png) no-repeat center;
+    position: fixed;
+    left: 0%;
+    top: 45%;
+    width: 92px;
+    height: 180px;
+    text-align: center;
+    z-index: 98;
+    line-height: 180px;
+}
+.viewmenu{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    transition: all 0.4s ease 0s;
+}
+.LadoA:hover .viewmenu{
+    transform: rotate(0);
+}
+.LadoB{
+    background: url(img/book-table-bg.png) no-repeat center;
+    position: fixed;
+    right: 0%;
+    top: 45%;
+    width: 92px;
+    height: 180px;
+    text-align: center;
+    z-index: 98;
+    line-height: 180px;
+}
+.bookatable{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transition: all 0.4s ease 0s;
+}
+.LadoB:hover .bookatable{
+    transform: rotate(0);
+}
+.textos2{
+    position: relative;
+    color: #777777;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0;
+    top: 225px;
+}
+#chef{
+    position: relative;
+    width: 555px;
+    height: 800px;
+    left: 50%;
+    top: 800px;
+}
+.titulo-section3{
+    position: relative;
+    width: 475px;
+    height: 574px;
+    left: 20.5%;
+    top: 250px;
+}
+.textos3{
+    color: #777777;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 0;
+    padding-bottom: 35px;
+}
+#chefs-title{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 48px;
+    text-align: left;
+    top: 1000px;
+    width: 390px;
+    height: 216px;
+}
+#callaction{
+    width: 1140px;
+    height: 450px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 350px;
+}
+.titulo-section4{
+    position: relative;
+    width: 475px;
+    height: 581px;
+    left: 55%;
+    top: 500px;
+}
+#info{
+    color: black;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 48px;
+    text-align: left;
+    top: 1000px;
+    width: 390px;
+    height: 216px;
+    letter-spacing: 5px;
+}
+#box{
+    position: relative;
+    width: 540px;
+    height: 650px;
+    background-color: #777777;
+    left: 20%;
+    bottom: 100px;
+}
+footer{
+    background-color: #04091e;
+    width: 100%;
+    height: 515px;
+    padding: 120px 0;
+    text-align: center;
+}
+.rodape-info{
+    display: inline-block;
+    padding-right: 50px;
+}
+.rodape-titulo{
+    font-family: "Playfair Display", serif;
+}
+.rodape-lista>li>a{
+    text-decoration: none;
+    color: #777777;
+}
+.rodape-lista>li{
+    line-height: 40px;
+    text-align: left;
+}
+.rodape-info>p{
+    text-align: left;
+}
+.rodape-ultimo{
+    position: relative;
+    top: -70px;
+}
+#stayUpdate{
+    color: #777777;
+    text-transform: initial;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.fa-heart{
+    color: #AD9966;
+}
+.Colorlib{
+    color: #AD9966;
+    text-decoration: none;
+    text-align: left;
+    position: relative;
+}
+.email-rodape{
+    border: solid #777777 1px;
+    padding: 10px 100px 10px 20px;
+    background-color: #04091e;
+    color: white;
+}
+.submit-rodape{
+    background-color: #AD9966;
+    color: white;
+    padding: 11px;
+    border: none;
+}
+.cat-widgets{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+.cat-widgets>div{
+    position: relative;
+    display: inline-block;
+    padding-inline-end: 30px;
+}
+.posts{
+    position: absolute;
+    width: 760px;
+    height: 1853px;
+}
+.post1{
+    position: relative;
+    left: 50%;
+    top: 350px;
+}
+.tags{
+    position: relative;
+    top: 100px;
+}
+.tags>a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.tags>a:hover{
+    text-decoration: none;
+    color: #AD9966;
+}
+.feature1{
+    width: 540px;
+    height: 252px;
+    background-image: url(img/feature-img1.jpg);
+    background-size: contain;
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+.info-post{
+    position: relative;
+    top: 100px;
+}
+.info-post>a{
+    text-decoration: none;
+    color: #777777;
+    transition: 0.3s;
+    line-height: 40px;
+}
+.info-post>a:hover{
+    text-decoration: none;
+    color: #AD9966;
+}
+.descricao{
+    position: relative;
+    left: 150px;
+    bottom: 110px;
+}
+.descricao-post{
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    transition: 0.3s;
+}
+.descricao-post:hover{
+    color: #AD9966;
+}
+.descricao>p{
+    color: #777777;
+    text-transform: initial;
+    font-size: 16px;
+    width: 540px;
+}
+.botao-post{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
+    border: solid #AD9966 1px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.botao-post:hover{
+    color: white;
+    background-color: #AD9966 ;
+}
+.feature2{
+    width: 540px;
+    height: 252px;
+    background-image: url(img/feature-img2.jpg);
+    background-size: contain;
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+.feature3{
+    width: 540px;
+    height: 252px;
+    background-image: url(img/feature-img3.jpg);
+    background-size: contain;
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+.feature4{
+    width: 540px;
+    height: 252px;
+    background-image: url(img/feature-img4.jpg);
+    background-size: contain;
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+.feature5{
+    width: 540px;
+    height: 252px;
+    background-image: url(img/feature-img5.jpg);
+    background-size: contain;
+    position: relative;
+    left: 150px;
+    bottom: 140px;
+}
+.search{
+    border: solid #AD9966 1px;
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px;
+    background-color: #AD9966;
+    color: rgb(255, 255, 255);
+}
+.search-page{
+    position: relative;
+    text-align: center;
+}
+.sobre{
+    position: relative;
+    width: 350px;
+    left: 60%;
+    top: 450px
+}
+.user-info{
+    background-image: url(img/user-info.png);
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 50px;
+}
+.user-link{
+    text-decoration: none;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    position: relative;
+    left: 31%;
+    top: 90px;
+}
+.user-link+p{
+    color: #777777;
+    font-size: 16px;
+    text-transform: initial;
+    position: relative;
+    top: 70px;
+    text-align: center;
+}
+.user-link+p+p{
+    color: #777777;
+    font-size: 16px;
+    text-transform: initial;
+    position: relative;
+    top: 70px;
+    text-align: center;
+    line-height: 25px;
+}
+.sobre-titulo{
+    font-family: "Playfair Display", serif;
+    color: white;
+    background-color: #AD9966;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    padding: 15px 0;
+}
+.pp{
+    position: relative;
+    top: 130px;
+}
+.pp1{
+    background-image: url(img/pp1.jpg);
+    width: 100px;
+    height: 60px;
+    position: relative;
+}
+.pp-info>a{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    bottom: 55px;
+    left: 110px;
+
+    transition: 0.3s;
+}
+.pp-info>a:hover{
+    color: #AD9966;
+}
+.pp-info>p{
+    color: #777777;
+    text-transform: initial;
+    font-size: 16px;
+    position: relative;
+    left: 110px;
+    bottom: 75px;
+}
+.pp2{
+    background-image: url(img/pp2.jpg);
+    width: 100px;
+    height: 60px;
+    position: relative;
+}
+.pp3{
+    background-image: url(img/pp3.jpg);
+    width: 100px;
+    height: 60px;
+    position: relative;
+}
+.pp4{
+    background-image: url(img/pp4.jpg);
+    width: 100px;
+    height: 60px;
+    position: relative;
+}
+.anuncio{
+    background-image: url(img/ads-banner.jpg);
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 100px;
+}
+.post-categorias{
+    position: relative;
+    top: 110px;
+}
+.class-ul>li{
+    line-height: 40px;
+}
+.post-links{
+    text-decoration: none;
+    color: #777777;
+    border-bottom: dotted #777777 1px;
+    transition: 0.3s;
+}
+.post-links:hover{
+    color: #AD9966;
+}
+.email{
+    border: solid #AD9966 1px;
+    padding: 10px 70px 10px 20px;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+}
+.email-subscribe{
+    position: relative;
+    top: 105px;
+}
+.post-email>p{
+    color: #777777;
+    text-transform: initial;
+    position: relative;
+    top: 90px;
+    font-size: 16px;
+    text-align: center;
+}
+.tag-clouds{
+    text-decoration: none;
+    color: #777777;
+    position: relative;
+    display: inline-block;
+    top: 130px;
+    border: solid #d3d3d3 1px;
+    padding: 5px 15px 5px 15px;
+    transition: 0.3s;
+}
+.tag-clouds:hover{
+    background-color: #AD9966;
+    color: white;
+}
+.rodape{
+    top: 1500px;
+    position: relative;
+}
+.teste{
+    padding-bottom: 10px;
+}
